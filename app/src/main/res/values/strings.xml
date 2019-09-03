@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ParkingLot</string>
+
+    <string name="Button_One">Lot 1</string>
+    <string name="Button_Two">Lot 2</string>
+    <string name="Button_Three">Lot 3</string>
+
+    <string name="Edit_One">License</string>
+    <string name="Edit_Two">Name</string>
+    <string name="Edit_Three">Phone</string>
+
+    <string name="Edit_Button">Update</string>
+    <string name="Delete_Button">Delete</string>
+
+</resources>
