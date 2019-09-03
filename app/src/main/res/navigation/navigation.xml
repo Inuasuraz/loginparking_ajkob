@@ -16,7 +16,7 @@
         android:name="buu.informatics.s59160081.parkinglot.MainFragment"
         android:label="MainFragment" />
     <fragment
-        android:id="@+id/infoFragment"
+        android:id="@+id/InfoFragment"
         android:name="buu.informatics.s59160081.parkinglot.InfoFragment"
         android:label="InfoFragment" />
 </navigation>
