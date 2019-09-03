@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".InfoFragment">
+
+        <Button
+            android:id="@+id/Button_One"
+            style="@style/Button_Lot"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/Button_One"
+            app:layout_constraintBaseline_toBaselineOf="@+id/Button_Two"
+            app:layout_constraintEnd_toStartOf="@+id/Button_Two"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/Button_Two"
+            style="@style/Button_Lot"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/Button_Two"
+            app:layout_constraintEnd_toStartOf="@+id/Button_Three"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/Button_One"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/Button_Three"
+            style="@style/Button_Lot"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="@string/Button_Three"
+            app:layout_constraintBaseline_toBaselineOf="@+id/Button_Two"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/Button_Two" />
+
+        <EditText
+            android:id="@+id/Name"
+            style="@style/EditText"
+            android:layout_width="@dimen/Edit_width"
+            android:layout_height="@dimen/Edit_height"
+            android:ems="10"
+            android:hint="@string/Edit_Two"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toTopOf="@+id/Phone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/License" />
+
+        <EditText
+            android:id="@+id/License"
+            style="@style/EditText"
+            android:layout_width="@dimen/Edit_width"
+            android:layout_height="@dimen/Edit_height"
+            android:ems="10"
+            android:hint="@string/Edit_One"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toTopOf="@+id/Name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Button_One" />
+
+        <EditText
+            android:id="@+id/Phone"
+            style="@style/EditText"
+            android:layout_width="@dimen/Edit_width"
+            android:layout_height="@dimen/Edit_height"
+            android:ems="10"
+            android:hint="@string/Edit_Three"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toTopOf="@+id/Button_Update"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Name" />
+
+        <Button
+            android:id="@+id/Button_Update"
+            style="@style/Button_Edit"
+            android:layout_width="@dimen/Button_Width2"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:text="@string/Edit_Button"
+            app:layout_constraintBaseline_toBaselineOf="@+id/Button_Delete"
+            app:layout_constraintEnd_toStartOf="@+id/Button_Delete"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/Button_Delete"
+            style="@style/Button_Delete"
+            android:layout_width="@dimen/Button_Width2"
+            android:layout_height="48dp"
+            android:layout_marginBottom="60dp"
+            android:text="@string/Delete_Button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/Button_Update" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
